@@ -1,3 +1,13 @@
+/**
+ * AUTHOR: RONAK PANAHI
+ * Date: December 2015
+ * Problem: Implementing a Network Time Protocol look-alike. 
+ * That’s a protocol that allows one computer to ask another 
+ * computer what the time is so that they can keep synchronized 
+ * and keep file and email timestamps consistent. 
+ * Remote Method Invocation (RMI)
+ */
+ 
 package client_side;
 
 
@@ -15,7 +25,8 @@ public class Client {
 
 		
 		try {
-			System.setProperty("java.security.policy","file:E:\\UIS\\Eclipse\\RMI_Project\\pp.policy");
+			// you have to have your policy file ready to use in here
+			System.setProperty("java.security.policy","file:pp.policy"); 
 			System.setSecurityManager(new RMISecurityManager());
 			
 			
